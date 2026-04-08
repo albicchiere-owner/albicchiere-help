@@ -6,8 +6,8 @@ const config: Config = {
   title: 'Albicchiere Help Center',
   tagline: 'Everything you need to get the most from your Albi',
   favicon: 'img/favicon.ico',
-  url: 'https://help.albicchiere.com',
-  baseUrl: '/',
+  url: 'https://albicchiere-owner.github.io',
+  baseUrl: '/albicchiere-help/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: {

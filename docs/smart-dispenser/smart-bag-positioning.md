@@ -19,6 +19,7 @@ Proper positioning of the Smart Wine Bag is essential for automatic wine recogni
 ## Troubleshooting
 
 If Albi doesn't recognize the bag:
+
 - Remove and reinsert the bag
 - Make sure the bag is fully seated (pushed all the way in)
 - Check that the NFC tag on the bag is not damaged
