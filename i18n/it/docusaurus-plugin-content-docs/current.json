@@ -1,0 +1,26 @@
+{
+  "sidebar.helpSidebar.category.General": {
+    "message": "Generale",
+    "description": "The label for category 'General' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Smart Dispenser": {
+    "message": "Smart Dispenser",
+    "description": "The label for category 'Smart Dispenser' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.App": {
+    "message": "App",
+    "description": "The label for category 'App' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Account": {
+    "message": "Account",
+    "description": "The label for category 'Account' in sidebar 'helpSidebar'"
+  },
+  "sidebar.helpSidebar.category.Wine Knowledge": {
+    "message": "Cultura del Vino",
+    "description": "The label for category 'Wine Knowledge' in sidebar 'helpSidebar'"
+  },
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  }
+}

@@ -1,0 +1,239 @@
+/* ── Google Fonts ─────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ── Light mode ───────────────────────────────────────────────────────────── */
+:root {
+  /* Primary */
+  --ifm-color-primary:          #ff0050;
+  --ifm-color-primary-dark:     #e6004a;
+  --ifm-color-primary-darker:   #d90046;
+  --ifm-color-primary-darkest:  #b3003b;
+  --ifm-color-primary-light:    #ff1a61;
+  --ifm-color-primary-lighter:  #ff2669;
+  --ifm-color-primary-lightest: #ff4d82;
+
+  /* Typography */
+  --ifm-font-family-base:      'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family:   'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-size-base:        16px;
+  --ifm-line-height-base:      1.65;
+  --ifm-heading-font-weight:   700;
+  --ifm-code-font-size:        90%;
+
+  /* Surfaces */
+  --ifm-background-color:         #ffffff;
+  --ifm-background-surface-color: #f6f6f7;
+  --ifm-color-content:            #171717;
+  --ifm-color-content-secondary:  #525252;
+
+  /* Navbar */
+  --ifm-navbar-background-color: #ffffff;
+  --ifm-navbar-height:           60px;
+  --ifm-navbar-shadow:           0 1px 0 0 #ebebec;
+
+  /* Sidebar */
+  --ifm-sidebar-width:                  280px;
+  --ifm-menu-color-background-active:   rgba(255, 0, 80, 0.07);
+  --ifm-menu-color-background-hover:    rgba(0, 0, 0, 0.04);
+  --ifm-menu-color-active:              #ff0050;
+
+  /* Dividers & radius */
+  --ifm-toc-border-color:    #ebebec;
+  --ifm-global-radius:       0.5rem;
+  --ifm-global-border-width: 1px;
+
+  /* Code */
+  --docusaurus-highlighted-code-line-bg: rgba(255, 0, 80, 0.07);
+}
+
+/* ── Dark mode ────────────────────────────────────────────────────────────── */
+[data-theme='dark'] {
+  --ifm-color-primary:          #ff4d82;
+  --ifm-color-primary-dark:     #ff2669;
+  --ifm-color-primary-darker:   #ff1a61;
+  --ifm-color-primary-darkest:  #ff0050;
+  --ifm-color-primary-light:    #ff739a;
+  --ifm-color-primary-lighter:  #ff80a4;
+  --ifm-color-primary-lightest: #ffb3c6;
+
+  --ifm-background-color:         #0f0f0f;
+  --ifm-background-surface-color: #1a1a1a;
+  --ifm-color-content:            #f5f5f5;
+  --ifm-color-content-secondary:  #a3a3a3;
+  --ifm-navbar-background-color:  #0f0f0f;
+  --ifm-navbar-shadow:            0 1px 0 0 #2a2a2a;
+  --ifm-toc-border-color:         #2a2a2a;
+  --ifm-menu-color-background-active: rgba(255, 77, 130, 0.1);
+  --ifm-menu-color-background-hover:  rgba(255, 255, 255, 0.05);
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 77, 130, 0.1);
+}
+
+/* ── Navbar ───────────────────────────────────────────────────────────────── */
+.navbar {
+  box-shadow: var(--ifm-navbar-shadow);
+  padding: 0 1.5rem;
+}
+
+.navbar__title {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.navbar__logo {
+  height: 26px;
+}
+
+/* ── Sidebar ──────────────────────────────────────────────────────────────── */
+.menu {
+  padding: 1rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Category header – styled as a section label, not a link */
+.menu__list-item-collapsible > .menu__link {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ifm-color-content-secondary);
+  padding: 0.75rem 0.75rem 0.25rem;
+  margin-top: 0.25rem;
+}
+
+.menu__list-item-collapsible > .menu__link:hover {
+  background: none;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* Leaf items */
+.menu__link {
+  border-radius: 0.375rem;
+  padding: 0.45rem 0.75rem;
+  transition: background 0.12s ease, color 0.12s ease;
+  font-weight: 400;
+  color: var(--ifm-color-content);
+}
+
+.menu__link--active:not(.menu__list-item-collapsible > .menu__link) {
+  font-weight: 500;
+}
+
+/* ── Main content area ────────────────────────────────────────────────────── */
+article {
+  max-width: 740px;
+}
+
+/* ── Headings ─────────────────────────────────────────────────────────────── */
+article h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+article h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+article h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-top: 1.75rem;
+}
+
+/* ── Body text ────────────────────────────────────────────────────────────── */
+article p,
+article li {
+  line-height: 1.75;
+  color: #404040;
+}
+
+[data-theme='dark'] article p,
+[data-theme='dark'] article li {
+  color: #c0c0c0;
+}
+
+/* ── Tables ───────────────────────────────────────────────────────────────── */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 0.625rem;
+  overflow: hidden;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+th {
+  background-color: var(--ifm-background-surface-color);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ifm-color-content-secondary);
+}
+
+td,
+th {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* ── TOC ──────────────────────────────────────────────────────────────────── */
+.table-of-contents {
+  font-size: 0.8rem;
+}
+
+.table-of-contents__link--active {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+}
+
+/* ── Breadcrumbs ──────────────────────────────────────────────────────────── */
+.breadcrumbs__link {
+  font-size: 0.82rem;
+}
+
+/* ── Admonitions ──────────────────────────────────────────────────────────── */
+.alert {
+  border-radius: 0.625rem;
+  border-left-width: 3px;
+}
+
+/* ── Code blocks ──────────────────────────────────────────────────────────── */
+code {
+  border-radius: 0.25rem;
+  font-size: 0.85em;
+  padding: 0.15em 0.4em;
+}
+
+/* ── Footer ───────────────────────────────────────────────────────────────── */
+.footer {
+  font-size: 0.85rem;
+  border-top: 1px solid var(--ifm-toc-border-color);
+}
+
+[data-theme='light'] .footer {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content-secondary);
+}
+
+.footer__link-item {
+  opacity: 0.75;
+  transition: opacity 0.15s ease;
+}
+
+.footer__link-item:hover {
+  opacity: 1;
+}

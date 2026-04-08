@@ -1,0 +1,14 @@
+{
+  "link.item.label.albicchiere.com": {
+    "message": "albicchiere.com",
+    "description": "The label of footer link with label=albicchiere.com linking to https://www.albicchiere.com"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Contatta il Supporto",
+    "description": "The label of footer link with label=Contact Support linking to mailto:support@albicchiere.com"
+  },
+  "copyright": {
+    "message": "© {year} Albicchiere / Beexlab S.r.l.",
+    "description": "The footer copyright"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Help Center",
+    "description": "The title in the navbar"
+  },
+  "item.label.Help Center": {
+    "message": "Help Center",
+    "description": "Navbar item with label Help Center"
+  },
+  "logo.alt": {
+    "message": "Albicchiere",
+    "description": "The alt text of navbar logo"
+  }
+}
