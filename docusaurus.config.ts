@@ -9,7 +9,11 @@ const config: Config = {
   url: 'https://albicchiere-owner.github.io',
   baseUrl: '/albicchiere-help/',
   onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'it'],
@@ -40,6 +44,7 @@ const config: Config = {
       logo: {
         alt: 'Albicchiere',
         src: 'img/logo.svg',
+        srcDark: 'img/logo-dark.svg',
       },
       items: [
         {
